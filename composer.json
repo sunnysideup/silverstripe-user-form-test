@@ -3,8 +3,15 @@
     "description": "testing userform functionality",
     "type": "silverstripe-recipe",
     "require": {
-        "silverstripe/recipe-cms": "4.x.dev",
-        "silverstripe/userforms": "^5"
+        "php": "^7.1 || ^8",
+        "silverstripe/recipe-plugin": "^1.2",
+        "silverstripe/recipe-cms": "4.8.0@stable",
+        "silverstripe-themes/simple": "~3.2.0",
+        "silverstripe/login-forms": "4.4.1@stable"
+    },
+    "require-dev": {
+        "sminnee/phpunit": "^5.7",
+        "sminnee/phpunit-mock-objects": "^3.4.5"
     },
     "authors": [
         {
@@ -23,6 +30,13 @@
             "app/src/PageController.php"
         ],
         "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
         ]
-    }
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true
 }
