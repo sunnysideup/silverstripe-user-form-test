@@ -23,9 +23,6 @@
             "app/src/PageController.php"
         ],
         "public-files-installed": [
-            ".htaccess",
-            "index.php",
-            "web.config"
         ]
     }
 }
