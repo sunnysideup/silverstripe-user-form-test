@@ -1,0 +1,31 @@
+{
+    "name": "ssu/silverstripe-user-form-test",
+    "description": "testing userform functionality",
+    "type": "silverstripe-recipe",
+    "require": {
+        "silverstripe/recipe-cms": "4.x.dev",
+        "silverstripe/userforms": "^5"
+    },
+    "authors": [
+        {
+            "name": "Nicolaas",
+            "email": "github@sunnysideup.co.nz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    }
+}
