@@ -1,7 +1,7 @@
 {
-    "name": "ssu/silverstripe-user-form-test",
-    "description": "testing userform functionality",
+    "name": "silverstripe/installer",
     "type": "silverstripe-recipe",
+    "description": "The SilverStripe Framework Installer",
     "require": {
         "php": "^7.1 || ^8",
         "silverstripe/recipe-plugin": "^1.2",
@@ -13,14 +13,8 @@
         "sminnee/phpunit": "^5.7",
         "sminnee/phpunit-mock-objects": "^3.4.5"
     },
-    "authors": [
-        {
-            "name": "Nicolaas",
-            "email": "github@sunnysideup.co.nz"
-        }
-    ],
-    "minimum-stability": "dev",
     "extra": {
+        "resources-dir": "_resources",
         "project-files-installed": [
             "app/.htaccess",
             "app/_config.php",
@@ -38,5 +32,6 @@
     "config": {
         "process-timeout": 600
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
