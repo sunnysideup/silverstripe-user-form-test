@@ -8,7 +8,7 @@
         "silverstripe/recipe-cms": "4.8.0@stable",
         "silverstripe-themes/simple": "~3.2.0",
         "silverstripe/login-forms": "4.4.1@stable",
-        "silverstripe/userforms": "^5.9"
+        "silverstripe/userforms": "5.x-dev"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",
@@ -30,6 +30,12 @@
             "web.config"
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:sunnysideup/silverstripe-userforms.git"
+        }
+    ],
     "config": {
         "process-timeout": 600
     },

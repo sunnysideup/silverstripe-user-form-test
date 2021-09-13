@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15766a85619483605fa14fdc4adb553b",
+    "content-hash": "a2a6269747a4a379120f54b37dfcb4d4",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -2484,16 +2484,16 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "v5.9.2",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "acf1c167431384d785aa496021eaecef9a2df261"
+                "url": "https://github.com/sunnysideup/silverstripe-userforms.git",
+                "reference": "bcd107b6057e89f49be01e7732bcdeb956a7cf22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/acf1c167431384d785aa496021eaecef9a2df261",
-                "reference": "acf1c167431384d785aa496021eaecef9a2df261",
+                "url": "https://api.github.com/repos/sunnysideup/silverstripe-userforms/zipball/bcd107b6057e89f49be01e7732bcdeb956a7cf22",
+                "reference": "bcd107b6057e89f49be01e7732bcdeb956a7cf22",
                 "shasum": ""
             },
             "require": {
@@ -2528,7 +2528,14 @@
                     "SilverStripe\\UserForms\\Tests\\Behat\\Context\\": "tests/behat/src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "phpcs code/ tests/"
+                ],
+                "lint-clean": [
+                    "phpcbf code/ tests/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2560,10 +2567,9 @@
                 "userforms"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-userforms/issues",
-                "source": "https://github.com/silverstripe/silverstripe-userforms/tree/v5.9.2"
+                "source": "https://github.com/sunnysideup/silverstripe-userforms/tree/5"
             },
-            "time": "2021-06-09T02:25:59+00:00"
+            "time": "2021-09-12T23:40:41+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -5542,7 +5548,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silverstripe/recipe-cms": 0,
-        "silverstripe/login-forms": 0
+        "silverstripe/login-forms": 0,
+        "silverstripe/userforms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
