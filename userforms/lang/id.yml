@@ -1,4 +1,0 @@
-id:
-  SilverStripe\UserForms\Model\EditableFormField:
-    GROUP: Grup
-    VALIDATION: Validasi
